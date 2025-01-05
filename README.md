@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+# **Video Sharing Native App 🎥**  
+A React Native-based **Video Sharing App** leveraging **Appwrite** for secure backend functionality and styled using **NativeWind** for a seamless, responsive, and modern UI/UX experience. 🚀  
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## ✨ **Features**  
+- 📹 **Video Sharing**: Effortlessly upload and share videos.  
+- 🛡 **Secure Backend**: Powered by **Appwrite** for robust authentication, database, and storage solutions.  
+- 🌈 **Modern Styling**: Styled with **NativeWind**, ensuring responsive and dynamic design.  
+- ⚡ **Cross-Platform**: Runs smoothly on both Android and iOS devices.  
 
-## Get started
+## 🚀 **Technologies Used**  
+- **React Native**: Framework for building cross-platform native apps.  
+- **Appwrite**: Backend services for database, storage, and user authentication.  
+- **NativeWind**: Tailwind CSS utilities adapted for React Native styling.  
 
-1. Install dependencies
+## 📦 **How to Use**  
+To get started with the **Video Sharing Native App**, follow these steps:
 
-   ```bash
+1. **Clone the repository**:  
+   Use the following command to clone the repository:  
+   ```bash  
+   git clone https://github.com/yourusername/Video_Sharing_Native_App.git
+2. **Navigate to the project directory**:  
+   Use the following command to clone the repository:  
+   ```bash  
+   cd Video_Sharing_Native_App
+3. **Install dependencies**:  
+   Use the following command to clone the repository:  
+   ```bash  
    npm install
+4. **Configure the Appwrite backend**:  
+  - Update the project with your Appwrite configuration:
+  - Replace API keys and endpoints in the configuration file to connect to your Appwrite server.
+    
+5. **Run the app on a device/emulator**:  
+   Choose your platform and run the app:
+   For Android:
+   bash
+   npm run android 
+   ```bash  
+   npm run android
    ```
-
-2. Start the app
-
+   For iOS:
    ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   npm run ios  
