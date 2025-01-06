@@ -59,7 +59,7 @@ const Create = () => {
       }, 100);
     }
   };
-  console.log("Video URI: ", form.video?.uri);
+  // console.log("Video URI: ", form.video?.uri);
   const submit = async () => {
     if (
       (form.prompt === "") |

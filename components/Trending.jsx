@@ -35,7 +35,7 @@ const TrendingItem = ({ activeItem, item }) => {
   const [error, setError] = useState(null);
 
   const videoUrl = item.video;
-
+  // console.log(videoUrl);
   const handleVideoEnd = () => {
     setPlay(false); // Reset to thumbnail when the video ends
   };
@@ -48,7 +48,10 @@ const TrendingItem = ({ activeItem, item }) => {
     >
       {play ? (
         <WebView
-          source={{ uri: videoUrl }}
+          source={{
+            uri: videoUrl,
+            headers: { "x-appwrite-project": "676d431e003e1afab2fe" }, // Ensure proper project header
+          }}
           style={{
             width: 208,
             height: 288,

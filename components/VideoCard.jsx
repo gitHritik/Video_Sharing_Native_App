@@ -8,7 +8,7 @@ const VideoCard = ({ title, creator, avatar, thumbnail, video }) => {
   const [error, setError] = useState(null);
 
   // Add autoplay to the Vimeo URL
-  const videoUrl = `${video}?autoplay=1`; // Modify the URL with autoplay
+  const videoUrl = video; // Modify the URL with autoplay
 
   const handleVideoEnd = () => {
     setPlay(false); // Reset to thumbnail when the video ends
@@ -50,7 +50,10 @@ const VideoCard = ({ title, creator, avatar, thumbnail, video }) => {
       {play ? (
         <View style={{ width: "100%", height: 240, marginTop: 12 }}>
           <WebView
-            source={{ uri: videoUrl }}
+            source={{
+              uri: videoUrl,
+              headers: { "x-appwrite-project": "676d431e003e1afab2fe" }, // Ensure proper project header
+            }}
             style={{
               width: "100%",
               height: "100%",
